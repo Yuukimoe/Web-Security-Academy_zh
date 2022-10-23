@@ -13,7 +13,7 @@
 ## 对于OAuth客户端应用
 
 - 在实现OAuth之前，请确保你完全理解它的工作原理。许多漏洞都是由于缺乏对每个阶段究竟发生了什么，以及如何利用这些漏洞的理解而引起的。
-- 使用`state`参数，即使它不是强制性的。
+- 使用`state`参数，即使它不是强制性要求的。
 - 不仅向`/authorization`端点发送`redirect_uri`参数，还要向`/token`端点发送。
 - 在开发移动或本机桌面OAuth客户端应用时，通常无法保持`client_secret`私有。在这些情况下，`PKCE`（`RFC 7636`）机制可用于提供额外的保护，已防止访问code被拦截或泄漏。
 - 如果你使用OpenID Connect `id_token`，请确保它是根据JSON Web Signature、JSON Web Encryption和OpenID规范正确验证的。
