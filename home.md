@@ -41,13 +41,13 @@ npm install gitbook-cli -g
 克隆此仓库。
 
 ```bash
-git clone https://github.com/0xf4n9x/Web_Security_Academy-zh
+git clone https://github.com/0xf4n9x/Web-Security-Academy_zh
 ```
 
 使用`gitbook`命令进行部署。
 
 ```bash
-cd Web_Security_Academy-zh && gitbook serve
+cd Web-Security-Academy_zh && gitbook serve
 ```
 
 访问：http://127.0.0.1:4000
