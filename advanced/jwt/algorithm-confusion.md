@@ -6,11 +6,11 @@
 
 JWT可以使用一系列不同的算法进行签名。其中一些，如HS256（HMAC + SHA-256）使用“对称”密钥。这意味着服务器使用一个单个的密钥来签名和验证令牌。显然这需要保密，就像密码一样。
 
-![](https://portswigger.net/web-security/jwt/images/jwt-symmetric-signing-algorithm.jpg)
+![](../../.gitbook/assets/imgs/advanced/jwt/jwt-symmetric-signing-algorithm.jpg)
 
 其他算法，如RS256（RSA + SHA-256）使用“非对称”密钥对。包含一个私钥，服务器用它来签名令牌，和一个数学上相关的公钥，可用于验证签名。
 
-![](https://portswigger.net/web-security/jwt/images/jwt-asymmetric-signing-algorithm.jpg)
+![](../../.gitbook/assets/imgs/advanced/jwt/jwt-asymmetric-signing-algorithm.jpg)
 
 顾名思义，私钥必须保密，但公钥通常是共享的，以便任何人都可以验证服务器颁发的令牌签名。
 

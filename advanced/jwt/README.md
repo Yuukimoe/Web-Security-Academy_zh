@@ -4,7 +4,7 @@
 
 如果不熟悉JWT及其工作原理，也不用担心。我们将在后面介绍所有相关细节。并且还提供了一些故意易受攻击的实验，以便你可以针对实际目标安全地利用这些漏洞进行练习。
 
-![](https://portswigger.net/web-security/jwt/images/jwt-infographic.jpg)
+![](../../.gitbook/assets/imgs/advanced/jwt/jwt-infographic.jpg)
 
 >**实验**
 >
@@ -61,7 +61,7 @@ JWT的标头和有效负载部分只是base64url编码的JSON对象。标头包�
 
 JWT规范实际上是非常有限的。它只定义了一种代表（“声明”）信息的格式，作为一个可以在双方之间传输的JSON对象。在实践中，JWT并没有真正作为一个独立的实体来使用。JWT规范由JSON Web Signature（JWS）和JSON Web Encryption（JWE）规范扩展，它们定义了实际实现JWT的具体方法。
 
-![](https://portswigger.net/web-security/jwt/images/jwt-jws-jwe.jpg)
+![](../../.gitbook/assets/imgs/advanced/jwt/jwt-jws-jwe.jpg)
 
 换句话说，JWT通常是一个JWS或JWE令牌。当人们使用术语“JWT”时，几乎都是指JWS令牌。JWE非常相似，只是令牌的实际内容是加密的，而不仅仅是编码的。
 
